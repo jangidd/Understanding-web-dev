@@ -1,0 +1,135 @@
+### Body of the index.html page in sublime text editor
+in which i have learnt how to make a table and add image in the same line using display property of css.
+
+<nav>
+		<a href="index.html">Home |</a>
+		<a href="product.html">Products</a>
+	</nav>
+	<nav>
+		<span style="border:2px solid red">span1</span>
+		<span style="border:2px solid green; display: block;">span2</span>
+	</nav>
+	<div>
+	<table class="pricing-table">
+		<caption class="caption-heading"><h1>Coffee Menu</h1></caption>
+		<tr>
+			<th>Item</th>
+			<th>Price</th>
+			<th>Availability</th>
+		</tr>
+		<tr class="tr-in-stock">
+			<td>Mocha</td>
+			<td>149</td>
+			<td>available</td>
+		</tr>
+		<tr class="tr-out-of-stock">
+			<td>Cappuccino</td>
+			<td>279</td>
+			<td>Not available</td>
+		</tr>
+	</table>	
+
+	</div>
+	<div class="available-coffee">
+		<p>This is a normal text.</p>
+		<p>this is a <b>bold</b>.</p>
+		<p>this is <em>emphasized</em>.</p>
+		<p>this is <strong>strong</strong></p>
+		<p>this is <sub>subscript</sub></p>
+		<p>this is <sup>superscript</sup></p>
+		<p style="color: red;">this is <i>italic</i></p>
+		<p>this is <del>deleted</del></p>
+	</div>
+	<div class="available-coffee out-of-stock" id="mocha" style="display: inline-block;">
+		<h4>Mocha</h4>
+		<img src="mocha.png" class="div-img">
+	</div>
+	<div class="available-coffee in-stock" style="display: inline-block;"><h4>Cappuccino</h4>
+		<img src="Cappuccino.png" class="div-img">
+	</div>
+	<div>
+		<footer class="footer-style">
+			<div>
+				<a href="index.html" style="color: white">Home |</a>
+				<a href="product.html" style="color: white">Products</a>
+			</div>
+			<div>This is an authentic information shared by Himanshu Jangid.</div>
+		</footer>
+	</div>
+
+
+#### The contents of coffeeshop.css file in sublime text editor
+in which i have learnt how to hover, use classes, id's and some other css properties to style the page.
+
+
+.available-coffee{
+	
+	height: 300px;
+	width: 300px;
+}
+.out-of-stock{
+	border: thick double green;
+
+}
+
+.in-stock{
+	border-top-color: black;
+	border-top-style: dotted;
+	border-top-width: 3px;
+
+	border-bottom-color: darkred;
+	border-bottom-style: dashed;
+	border-bottom-width: 4px;
+}
+
+.div-img{
+	height: 80%;
+	width: 100%;
+
+}
+#mocha{
+	color: green;
+}
+
+.pricing-table{
+	width: 100%;
+	border: 2px solid green;
+	font-family: "Arial Black", gadget, sans-serif;
+	text-align: center;
+
+}
+.caption-heading{
+	color: lightblue;
+	font-size: 22px;
+}
+
+th{
+	background-color: lightgreen;
+	color: white;
+	height: 50px;
+	font-size: 22px;
+}
+td{
+	color: brown;
+	height: 50px;
+	font-size: 22px;
+}
+
+.tr-in-stock:hover{
+	background-color: lightpink;
+}
+
+
+.tr-out-of-stock:hover{
+	background-color: lightcoral;
+}
+.coffee-list{
+	list-style-type: circle;
+	color: brown;
+}
+.footer-style{
+	background-color: lightblue;
+	height: 100%;
+	color: white;
+	text-align: center;
+
